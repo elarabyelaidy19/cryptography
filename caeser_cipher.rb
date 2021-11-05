@@ -1,4 +1,4 @@
-def encrypt(string, shift)
+def encrypt(string, shift) 
   string.chars.map do |char|
     if char.match(/[a-z]/)
       ((char.ord - 97 + shift) % 26 + 97).chr
